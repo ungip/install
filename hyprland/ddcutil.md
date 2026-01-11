@@ -19,3 +19,18 @@ control:
 sudo ddcutil setvcp 10 70
 sudo ddcutil setvcp 10 +25
 ```
+waybar script (waybar/config):
+```
+"custom/brightness": {
+    "format": "{icon} {percentage}%",
+    "format-icons": ["\uDB80\uDCDE", "\uDB80\uDCDF", "\uDB80\uDCE0"],
+    "return-type": "json",
+    "exec": "ddcutil --bus 0 getvcp 10 | grep -oP 'current.*?=\\s*\\K[0-9]+' | { read x; echo '{\"percentage\":'${x}'}'; }",
+    "on-scroll-up": "ddcutil --noverify --bus 0 setvcp 10 + 5",
+    "on-scroll-down": "ddcutil --noverify --bus 0 setvcp 10 - 5",
+    "on-click": "ddcutil --noverify --bus 0 setvcp 10 0",
+    "on-click-right": "ddcutil --noverify --bus 0 setvcp 10 20",
+    "interval": 1,
+    "tooltip": false,
+},
+```
