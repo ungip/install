@@ -20,6 +20,7 @@ install=(
     hyprpaper
     hyprlauncher
     cliphist
+    ddcutil
 )
 
 sudo pacman -S --noconfirm --needed "${install[@]}"
