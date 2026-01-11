@@ -21,6 +21,7 @@ install=(
     hyprlauncher
     cliphist
     ddcutil
+    nwg-look
 )
 
 sudo pacman -S --noconfirm --needed "${install[@]}"
