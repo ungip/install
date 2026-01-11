@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo pacman -S --noconfirm --needed thunar
+sudo pacman -S --noconfirm --needed thunar gvfs-smb
