@@ -7,6 +7,7 @@ misc=(
     otf-font-awesome
     7zip
     xarchiver
+    gedit
 )
 
 sudo pacman -S --noconfirm --needed "${misc[@]}"
