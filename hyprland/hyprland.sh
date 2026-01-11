@@ -7,15 +7,14 @@ install=(
     vulkan-intel
     hyprland
     kitty
-    hyperpolkitagent
+    hyprpolkitagent
     xdg-desktop-portal-hyprland
     dunst
     pipewire
     wireplumber
     qt5-wayland
     qt6-wayland
-    sans-serif
-    noto-fonts
+    ttf-opensans
     waybar
     hyprpaper
     hyprlauncher
