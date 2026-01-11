@@ -13,8 +13,8 @@ install=(
     pipewire
     wireplumber
     pipewire-pulse
-    qt5-wayland
-    qt6-wayland
+    #qt5-wayland
+    #qt6-wayland
     ttf-opensans
     waybar
     hyprpaper
