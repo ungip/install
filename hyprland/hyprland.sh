@@ -23,6 +23,7 @@ install=(
     ddcutil
     nwg-look
     hyprshot
+    hypridle
 )
 
 sudo pacman -S --noconfirm --needed "${install[@]}"
