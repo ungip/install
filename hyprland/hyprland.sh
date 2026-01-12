@@ -22,6 +22,7 @@ install=(
     cliphist
     ddcutil
     nwg-look
+    hyprshot
 )
 
 sudo pacman -S --noconfirm --needed "${install[@]}"
