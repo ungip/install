@@ -9,6 +9,7 @@ misc=(
     xarchiver
     gedit
     nwg-look
+    pavucontrol
 )
 
 sudo pacman -S --noconfirm --needed "${misc[@]}"
