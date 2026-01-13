@@ -18,7 +18,7 @@ install=(
     ttf-opensans
     waybar
     hyprpaper
-    hyprlauncher
+    rofi-wayland
     cliphist
     ddcutil
     nwg-look
