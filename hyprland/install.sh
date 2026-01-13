@@ -6,4 +6,4 @@
 . ./misc.sh
 . ./config.sh
 . ./yay.sh
-. ./google-chrome
+. ./google-chrome.sh
