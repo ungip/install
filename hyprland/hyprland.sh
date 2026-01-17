@@ -9,7 +9,7 @@ install=(
     kitty
     hyprpolkitagent
     xdg-desktop-portal-hyprland
-    dunst
+    swayng
     pipewire
     wireplumber
     pipewire-pulse
