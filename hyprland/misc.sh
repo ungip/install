@@ -10,6 +10,7 @@ misc=(
     gedit
     nwg-look
     pavucontrol
+    nfs-utils
 )
 
 sudo pacman -S --noconfirm --needed "${misc[@]}"
