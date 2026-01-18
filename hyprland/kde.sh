@@ -23,8 +23,9 @@ install=(
     qt5-wayland
     qt6-wayland
     qt5ct
-    qt6ct
+    qt6ct-kde
     dolphin
+    dolphin-plugins
     kate
     okular
     gwenview
