@@ -30,6 +30,7 @@ install=(
     kate
     okular
     gwenview
+    kcalc
     ####misc####
     ddcutil
     fish
@@ -40,6 +41,7 @@ install=(
     pavucontrol
     nfs-utils
     google-chrome
+    jellyfin-desktop
 )
 
 yay -S --noconfirm --needed "${install[@]}"
