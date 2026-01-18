@@ -1,8 +1,8 @@
 // -*- mode: jsonc -*-
 {
-	"modules-left": ["hyprland/workspaces"],
-	"modules-center": ["hyprland/window"],
-	"modules-right": ["clock", "pulseaudio", "custom/brightness", "custom/power"],
+	"modules-left": ["clock"],
+	"modules-center": ["hyprland/workspaces"],
+	"modules-right": ["pulseaudio", "custom/brightness", "custom/power"],
     
     // Modules configuration
  
@@ -13,7 +13,7 @@
 	},
 
 	"custom/brightness": {
-	"format": "{icon} {percentage}%",
+	"format": " {icon} {percentage}%",
 	"format-icons": ["", "", "", "", "", "", "", "", ""],
 	"return-type": "json",
 	"exec": "ddcutil --bus 0 getvcp 10 | grep -oP 'current.*?=\\s*\\K[0-9]+' | { read x; echo '{\"percentage\":'${x}'}'; }",
@@ -27,7 +27,7 @@
 
 	"pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-		"format": "{icon} {volume}%",
+		"format": "{icon} {volume}% ",
 		"format-bluetooth": "{volume}% {icon} {format_source}",
 		"format-bluetooth-muted": " {icon} {format_source}",
 		"format-muted": " {format_source}",
