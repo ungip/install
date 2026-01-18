@@ -1,7 +1,6 @@
 #!/bin/sh
 
 install=(
-    ####hyprland####
     intel-media-driver
     libva-intel-driver
     mesa
@@ -9,7 +8,7 @@ install=(
     hyprland
     kitty
     xdg-desktop-portal-hyprland
-    swayng
+    swaync
     pipewire
     wireplumber
     pipewire-pulse
@@ -20,7 +19,6 @@ install=(
     cliphist
     hyprshot
     hypridle
-    ####kde####
     polkit-kde-agent
     qt5-wayland
     qt6-wayland
@@ -32,7 +30,6 @@ install=(
     gwenview
     kcalc
     ark
-    ####misc####
     7zip
     ddcutil
     fish
