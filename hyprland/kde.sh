@@ -39,6 +39,7 @@ install=(
     7zip
     pavucontrol
     nfs-utils
+    google-chrome
 )
 
 yay -S --noconfirm --needed "${install[@]}"
