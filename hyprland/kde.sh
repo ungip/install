@@ -31,6 +31,7 @@ install=(
     okular
     gwenview
     kcalc
+    ark
     ####misc####
     ddcutil
     fish
