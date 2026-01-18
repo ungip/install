@@ -26,6 +26,7 @@ install=(
     qt6ct-kde
     dolphin
     dolphin-plugins
+    breeze
     kate
     okular
     gwenview
