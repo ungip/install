@@ -33,6 +33,7 @@ install=(
     kcalc
     ark
     ####misc####
+    7zip
     ddcutil
     fish
     micro
