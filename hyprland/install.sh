@@ -4,6 +4,6 @@
 . ./hyprland.sh
 . ./filemanager.sh
 . ./misc.sh
-. ./config.sh
 . ./yay.sh
 . ./aur.sh
+. ./config.sh

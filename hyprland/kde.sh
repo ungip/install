@@ -1,0 +1,44 @@
+#!/bin/sh
+
+install=(
+    ####hyprland####
+    intel-media-driver
+    libva-intel-driver
+    mesa
+    vulkan-intel
+    hyprland
+    kitty
+    xdg-desktop-portal-hyprland
+    swayng
+    pipewire
+    wireplumber
+    pipewire-pulse
+    ttf-opensans
+    waybar
+    hyprpaper
+    rofi-wayland
+    cliphist
+    hyprshot
+    hypridle
+    ####kde####
+    polkit-kde-agent
+    qt5-wayland
+    qt6-wayland
+    qt5ct
+    qt6ct
+    dolphin
+    kate
+    okular
+    gwenview
+    ####misc####
+    ddcutil
+    fish
+    micro
+    exa
+    otf-font-awesome
+    7zip
+    pavucontrol
+    nfs-utils
+)
+
+yay -S --noconfirm --needed "${install[@]}"
