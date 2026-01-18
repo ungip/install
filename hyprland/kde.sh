@@ -39,6 +39,7 @@ install=(
     7zip
     pavucontrol
     nfs-utils
+    nwg-look
     google-chrome
     jellyfin-desktop
 )
