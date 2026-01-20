@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo pacman -S -- needed fish fisher exa fastfetch btop
+sudo pacman -S -- needed fish fisher exa fastfetch btop 7zip
