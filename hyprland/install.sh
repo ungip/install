@@ -3,7 +3,6 @@
 . ./sddm.sh
 . ./hyprland.sh
 . ./filemanager.sh
-. ./misc.sh
 . ./yay.sh
-. ./aur.sh
+. ./misc.sh
 . ./config.sh

@@ -3,14 +3,18 @@
 misc=(
     fish
     micro
-    exa
+    lsd
     otf-font-awesome
     7zip
     xarchiver
-    gedit
     nwg-look
     pavucontrol
     nfs-utils
+    google-chrome
+	catppuccin-gtk-theme-mocha
+	waypaper
+	lite-xl
+    lpm
 )
 
-sudo pacman -S --noconfirm --needed "${misc[@]}"
+yay -S --noconfirm --needed "${misc[@]}"
