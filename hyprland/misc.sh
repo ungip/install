@@ -12,7 +12,7 @@ misc=(
     nfs-utils
     google-chrome
 	catppuccin-gtk-theme-mocha
-	waypaper
+	#waypaper
 	lite-xl
     lpm
 )
