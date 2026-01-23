@@ -2,7 +2,7 @@
 {
 	"modules-left": ["clock"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["pulseaudio", "custom/brightness", "custom/power"],
+	"modules-right": ["pulseaudio", "custom/brightness", "bluetooth", "custom/power"],
     
     // Modules configuration
  
@@ -28,9 +28,9 @@
 	"pulseaudio": {
         // "scroll-step": 1, // %, can be a float
 		"format": "{icon} {volume}% ",
-		"format-bluetooth": "{volume}% {icon} {format_source}",
+		"format-bluetooth": " {volume}% ",
 		"format-bluetooth-muted": " {icon} {format_source}",
-		"format-muted": " {format_source}",
+		"format-muted": " 0%",
 		"format-icons": {
 			"default": ["", "", ""]
 			},
@@ -48,5 +48,17 @@
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
 		}
+	},
+
+	"bluetooth": {
+		"format": "<span color='#00BFFF'>  </span>{status} ",
+		"format-connected": "<span color='#00BFFF'>  </span>{device_alias} ",
+		"format-connected-battery": "<span color='#00BFFF'>  </span>{device_alias}{device_battery_percentage}% ",
+		"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+		"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+		"on-click": "blueman-manager"
 	}
+
 }

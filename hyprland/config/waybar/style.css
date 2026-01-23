@@ -11,7 +11,6 @@ window#waybar {
     background: transparent;
     background-color: @crust;
     color: @overlay0;
-    opacity: 0.9;
 }
 
 #window {
@@ -75,6 +74,11 @@ button:hover {
 #custom-brightness {
     color: @green;
     
+}
+
+#bluetooth {
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
