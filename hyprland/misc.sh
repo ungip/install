@@ -17,6 +17,7 @@ misc=(
     bluez
     bluez-utils
     blueman
+    ristretto
 )
 
 yay -S --noconfirm --needed "${misc[@]}"
