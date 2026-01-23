@@ -81,6 +81,9 @@ button:hover {
     margin-right: 4px;
 }
 
+#language {
+    color: @lavender;
+}
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left>widget:first-child>#workspaces {
     margin-left: 0;

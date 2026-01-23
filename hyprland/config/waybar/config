@@ -2,7 +2,7 @@
 {
 	"modules-left": ["clock"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["pulseaudio", "custom/brightness", "bluetooth", "custom/power"],
+	"modules-right": ["pulseaudio", "custom/brightness", "hyprland/language", "bluetooth", "custom/power"],
     
     // Modules configuration
  
@@ -22,11 +22,11 @@
 	"on-click": "ddcutil --noverify --bus 0 setvcp 10 0",
 	"on-click-right": "ddcutil --noverify --bus 0 setvcp 10 30",
 	"interval": 1,
-	"tooltip": false
+	"tooltip": false,
 	},
 
 	"pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
+    "scroll-step": 5,
 		"format": "{icon} {volume}% ",
 		"format-bluetooth": " {volume}% ",
 		"format-bluetooth-muted": " {icon} {format_source}",
@@ -60,6 +60,11 @@
 		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
 		"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
 		"on-click": "blueman-manager"
-	}
+	},
 
+	"hyprland/language": {
+		"format-de": "  de",
+		"format-hu": "  hu",
+		"on-click": "hyprctl switchxkblayout logitech-k370s/k375s next",
+	}
 }
