@@ -22,7 +22,7 @@
 	"on-click": "ddcutil --noverify --bus 0 setvcp 10 0",
 	"on-click-right": "ddcutil --noverify --bus 0 setvcp 10 30",
 	"interval": 1,
-	"tooltip": false,
+	"tooltip": false
 	},
 
 	"pulseaudio": {
@@ -51,9 +51,10 @@
 	},
 
 	"bluetooth": {
-		"format": "<span color='#00BFFF'>  </span>{status} ",
-		"format-connected": "<span color='#00BFFF'>  </span>{device_alias} ",
-		"format-connected-battery": "<span color='#00BFFF'>  </span>{device_alias}{device_battery_percentage}% ",
+		"format": "<span color='#89b4fa'> </span>",
+		"format-disabled": " ",
+		"format-connected": "<span color='#89b4fa'>  </span>{device_alias} ",
+		"format-connected-battery": "<span color='#89b4fa'>  </span>{device_alias}{device_battery_percentage}% ",
 		"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
 		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
 		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
