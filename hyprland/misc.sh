@@ -12,9 +12,13 @@ misc=(
     nfs-utils
     google-chrome
 	catppuccin-gtk-theme-mocha
-	#waypaper
 	lite-xl
     lpm
+    bluez
+    bluez-utils
+    blueman
 )
 
 yay -S --noconfirm --needed "${misc[@]}"
+
+sudo systemctl enable bluetooth
