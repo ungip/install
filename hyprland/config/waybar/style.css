@@ -2,7 +2,7 @@
 
 * {
     font-family: "MesloLGL Nerd Font Mono Bold";
-    font-size: 14px;
+    font-size: 12px;
     min-height: 0;
     font-weight: bold;
 }
@@ -11,9 +11,7 @@ window#waybar {
     background: transparent;
     background-color: @crust;
     color: @overlay0;
-    transition-property: background-color;
-    transition-duration: 0.1s;
-    border-bottom: 1px solid @overlay1;
+    opacity: 0.9;
 }
 
 #window {
@@ -56,7 +54,7 @@ button:hover {
 
 #clock {
     color: #ffffff;
-    font-size: 16px
+    font-size: 13px
 }
 
 #clock.date {
@@ -71,7 +69,7 @@ button:hover {
 
 #custom-power {
     color: #ffffff;
-    font-size: 26px;
+    font-size: 16px;
 }
 
 #custom-brightness {
@@ -88,5 +86,3 @@ button:hover {
 .modules-right>widget:last-child>#workspaces {
     margin-right: 0;
 }
-
-
