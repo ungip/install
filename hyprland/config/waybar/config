@@ -1,15 +1,16 @@
 // -*- mode: jsonc -*-
 {
-	"modules-left": ["clock"],
-	"modules-center": ["hyprland/workspaces"],
+	"modules-left": ["hyprland/workspaces"],
+	"modules-center": ["clock"],
 	"modules-right": ["pulseaudio", "custom/brightness", "hyprland/language", "bluetooth", "custom/power"],
     
     // Modules configuration
  
 	"clock": {
-        	"format": "{:%H:%M}",
+        "format": "{:%H:%M}",
+        "locale": "de_AT.UTF-8",
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-		"format-alt": "{:%Y-%m-%d}"
+		"format-alt": "{:%d.%m.%Y}"
 	},
 
 	"custom/brightness": {
@@ -45,8 +46,8 @@
 		"menu-actions": {
 			"shutdown": "shutdown -h now",
 			"reboot": "reboot",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
+			"logout": "hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit",
+			"standby": "systemctl suspend"
 		}
 	},
 
